@@ -1,0 +1,30 @@
+cassandra:
+  keyspaceName: style
+
+spring:
+  data:
+    cassandra:
+      schemaAction: CREATE_IF_NOT_EXISTS
+server:
+  compression:
+    enabled:  true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    min-response-size: 1024
+
+# ===============================
+# = Redis configurations
+# ===============================ß
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+    timeout: 0
+
+
+
