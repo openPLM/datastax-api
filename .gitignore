@@ -7,5 +7,7 @@ project/target
 .project
 .classpath
 .idea
+.DS_Store
+product.impl
 /lsp
 creds.zip
